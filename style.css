@@ -1,0 +1,190 @@
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box }
+body { 
+  min-height: 100vh; 
+  padding: 2rem; 
+  background-color: #E5E6EB; 
+  display: grid; place-items: center; 
+  background-image: radial-gradient(circle at top left, white 25%, rgb(255 255 255 / 25%));
+  display: flex;
+  justify-content: center;
+}
+
+img { 
+  max-width: 100%
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 2rem;
+  list-style: none;
+}
+
+.card {
+  transition: all .2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  --iconS: 6rem;
+  --iconOffsetX: calc(var(--iconS) / 4);
+  --iconOffsetY: calc(var(--iconS) / 2.5);
+  margin-top: var(--iconOffsetY);
+  margin-inline: var(--iconOffsetX);
+  border-radius: 1rem;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #fff;
+  --shadowSurface: 0.5rem 0.5rem 0.5rem rgba(255, 255, 255);
+  --bgGradient: radial-gradient(circle at bottom right, #ffffff00, rgb(114 114 114 / 10%));
+  background-image:
+    radial-gradient( circle at 
+        calc(var(--iconOffsetX) * -1 + var(--iconS) / 2) 
+        calc(var(--iconOffsetY) * -1 + var(--iconS) / 2), 
+      rgb(0 0 0 / .4) calc(var(--iconS) / 2), 
+      transparent calc(var(--iconS) / 1.6)
+    ),
+    radial-gradient( circle at 
+        calc(var(--iconOffsetX) * -1 + var(--iconS) / 2)
+        calc(var(--iconOffsetY) * -1 + var(--iconS) / 2),
+      var(--accent-color) calc(var(--iconS) / 1.4),
+      transparent calc(var(--iconS) / 1.4 + 1px)
+    ),
+    var(--bgGradient);
+  --shadowInsetLight: inset 0.125rem 0.125rem 0.125rem rgb(255 255 255 / 50%);
+  --shadowInsetDark: inset -0.067rem -0.067rem 0.067rem rgb(0 0 0 / .5);
+    box-shadow: 0px 8px 9.2px 3.8px rgb(0 0 0 / 40%) !important;
+}
+
+.card .icon {
+  width: var(--iconS);
+  aspect-ratio: 1;
+  margin-top: calc(var(--iconOffsetY) * -1);
+  margin-left: calc(var(--iconOffsetX) * -1);
+  margin-bottom: calc(var(--iconS) / 4);
+  display: grid;
+  place-items: center;
+  color: var(--accent-color);
+  font-size: calc(var(--iconS) / 3);
+  background-color: inherit;
+  border-radius: 50%;
+  box-shadow:
+    var(--shadowInsetLight),
+    var(--shadowInsetDark);
+  background-image: var(--bgGradient);
+}
+
+.card .title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  font-size: 18px;
+}
+
+.card .content{
+  padding: 20px;
+  font-size: 0.9em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.card:hover{
+ 
+  transform: scale(1.1);
+}
+
+.heading1{
+  font-size: 35px;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.heading2{
+  font-size: 22px;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#card1:hover{
+  box-shadow: 0 10px 55px 5px rgb(21 1 137 / 30%) !important;
+  transform: translate3d(0,8px,0) !important;
+}
+
+#card2:hover{
+  box-shadow: 0 10px 55px 5px rgb(255 92 0 / 30%) !important;
+  transform: translate3d(0,8px,0) !important;
+}
+
+#card3:hover{
+  box-shadow: 0 10px 55px 5px rgb(63 119 251 / 30%) !important;
+  transform: translate3d(0,8px,0) !important;
+}
+
+#card4:hover{
+  box-shadow: 0 10px 55px 5px rgb(117 0 63 / 30%) !important;
+  transform: translate3d(0,8px,0) !important;
+}
+
+#card5:hover{
+  box-shadow: 0 10px 55px 5px rgb(15 101 2 / 30%) !important;
+  transform: translate3d(0,8px,0) !important;
+}
+
+@media screen and (min-width: 1366px){
+body{
+  min-height: 100vh; 
+  padding: 2rem; 
+  background-color: #E5E6EB; 
+  display: grid; place-items: center; 
+  background-image: radial-gradient(circle at top left, white 25%, rgb(255 255 255 / 25%));
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+}
+/* Button CSS */
+.button-52 {
+  display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+}
+
+.button-52:hover
+{
+  background-color: #3e8e41;
+}
+
+
+@media (max-width: 1366px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+.container{
+  background: #E5E6EB;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 30px;
+}
